@@ -49,11 +49,11 @@ spec:
         tier: frontend
     spec:
       containers:
+      - image: evertonaulian/node:${VERSION}
+        name: node
         env:
         - name: VERSION
           value: COMMIT
-        - image: evertonaulian/node:${VERSION}
+        ports:
+        - containerPort: 3000
           name: node
-          ports:
-          - containerPort: 3000
-            name: node
