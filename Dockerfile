@@ -2,7 +2,7 @@ FROM node:13.2.0
 
 WORKDIR /usr/src/app
 
-COPY ./app.js .
+COPY ./app/ .
 
 EXPOSE 3000
 
