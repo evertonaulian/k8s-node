@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: evertonaulian/node
       pushRemote: true
-      registry: 127.0.0.1:34070
+      registry: index.docker.io
 - name: Deploy
   steps:
   - applyYamlConfig:
