@@ -49,8 +49,14 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: evertonaulian/node:$VERSION
+      - image: evertonaulian/node:{$VERSION}
         name: node
+        env:
+        - name: VERSION
+          valueFrom:
+            secretKeyRef:
+              name: cicd-git-commit
+              key: COMMIT
         ports:
         - containerPort: 3000
           name: node
