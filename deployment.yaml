@@ -49,7 +49,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: evertonaulian/node:$(VERSION)
+      - image: evertonaulian/node:$(COMMIT)
         name: node
         # env:
         # - name: VERSION
