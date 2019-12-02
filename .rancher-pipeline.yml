@@ -18,7 +18,7 @@ stages:
   - applyYamlConfig:
       path: ./deployment.yaml
     env:
-      VERSION: ${CICD_GIT_COMMIT}
+      COMMIT: ${CICD_GIT_COMMIT}
 timeout: 60
 notification:
   recipients:
