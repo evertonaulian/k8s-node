@@ -20,9 +20,4 @@ stages:
     env:
       COMMIT: ${CICD_GIT_COMMIT}
 timeout: 60
-notification:
-  recipients:
-  - recipient: '#rancher'
-    notifier: c-trw7c:n-l2z7l
-  condition:
-  - Success
+notification: {}
