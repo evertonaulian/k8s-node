@@ -49,9 +49,9 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: "evertonaulian/node:{{ COMMIT }}"
+      - image: evertonaulian/node:"{{ COMMIT }}"
         name: node
         imagePullPolicy: "Always"
         ports:
         - containerPort: 3000
-          name: node
+          name: nodeπ
